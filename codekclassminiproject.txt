@@ -1,0 +1,40 @@
+1]Miniproject:
+import numpy as np
+data_types=[('name','S'),('class',int),('height',float)]
+students_details = [('James',5,48.5),('Nail',6,52.5),('Paul',5, 42.10),('Pit', 5,40.11)]
+#create a structured array
+students=np.array(students_details,dtype=data_types)
+print('original array')
+print(students)
+print('sort by array')
+print(np.sort(students,order='height'))
+
+original array
+[(b'', 5, 48.5 ) (b'', 6, 52.5 ) (b'', 5, 42.1 ) (b'', 5, 40.11)]
+sort by array
+[(b'', 5, 40.11) (b'', 5, 42.1 ) (b'', 5, 48.5 ) (b'', 6, 52.5 )]
+
+2]Miniproject:
+
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.array(['java','Python','PHP','Javascript','C#','C++'])
+y = np.array([22.2, 17.6, 8.8, 8, 7.7, 6.7])
+plt.title("Popularity of programin Languages Worldwide,Oct 2017compared to a year ago")
+plt.xlabel("Languages")
+plt.ylabel("Popularity")
+plt.plot(x, y)
+plt.bar(x,y)
+plt.grid()
+plt.grid(which='major', linestyle='-', linewidth='0.5', color='red')
+# Customize the minor grid
+plt.grid(which='minor', linestyle=':', linewidth='0.5', color='black')
+plt.minorticks_on()
+plt.show()
+
+
+
+
+
+
+
